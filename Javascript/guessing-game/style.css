@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-default: "DM Sans", sans-serif;
+
+  --color-default: #FFFF;
+  --color-primary: #34355B;
+  --color-second: #7879F1;
+
+  --color-bg-primary: #c2e9fb;
+  --color-bg-second: #a1c4fd;
+  --color-bg-trird: ##DCE2E9;
+
+  font-size: 92.5%;
+}
+
+body {
+  background: linear-gradient(287.56deg, var(--color-bg-primary) 0%, var(--color-bg-second) 100%) no-repeat;
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: var(--font-default);
+  margin-bottom: 1.6rem;
+  text-align: center;
+
+}
+
+.paragraph {
+  font-size: 1em;
+  font-weight: 300;
+  opacity: 80%;
+  text-align: center;
+  font-family: var(--font-default);
+}
+
+
+.hide {
+  display: none;
+}
+
+main {
+  background: var(--color-default);
+  color: var(--color-primary);
+  margin-top: -6rem;
+
+  display: grid;
+  place-items: center;
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem;
+  border-radius: .6rem;
+  box-shadow: 0 .2rem .4rem rgb(0, 0, 0, 0.1);
+
+
+  .input {
+    padding: 1.6rem;
+    background: #DCE2E9;
+    border-radius: .4rem 0 0 .4rem;
+    font-weight: 500;
+    outline: transparent;
+    transition: all linear 100ms;
+    width: 6.5rem;
+
+    &&:focus {
+      background: var(--color-default);
+      outline: 2px solid var(--color-second);
+    }
+
+  }
+
+  .sub-item {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .4rem;
+    margin-top: 2em;
+  }
+
+  .button {
+    padding: 1.6rem;
+    background-color: var(--color-second);
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: var(--color-default);
+    cursor: pointer;
+    transition: all linear 100ms;
+
+    &&.primary {
+      border-radius: 0 .4rem .4rem 0;
+    }
+
+    &&.second {
+      width: 70%;
+      border-radius: .4rem;
+    }
+
+    &&:active {
+      background: var(--color-primary);
+      outline: 2px solid var(--color-second);
+    }
+
+    &&:hover,
+    &&:focus {
+      outline: 2px solid var(--color-second);
+    }
+  }
+
+
+}

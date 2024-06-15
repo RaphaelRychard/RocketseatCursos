@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quessing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="style.js" defer></script>
+</head>
+
+<body>
+  <main>
+
+    <div class="screenOne">
+      <section class="info-title">
+        <h1 class="title">Jogo da Adivinhação</h1>
+        <p class="paragraph">Adivinhe o número entre 0 e 10</p>
+      </section>
+
+      <form class="sub-item">
+        <input class="input" type="number" name="nome" id="inputNumber" placeholder="digite um número"
+          autocomplete="off">
+        <button class="button primary" id="submit">
+          Tentar
+        </button>
+      </form>
+    </div>
+
+    <div class="screenTwo hide">
+      <section class="info-title">
+        <h2 class="title">Acertou em 3 tentativas!</h2>
+        <p class="paragraph">Adivinhe o número entre 0 e 10</p>
+      </section>
+
+      <div class="sub-item">
+        <button class="button second" id="anotherAttempt">
+          Tentar Novamente
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+
+
+</html>
